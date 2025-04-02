@@ -1,3 +1,4 @@
+import asyncio
 import logging
 from typing import Any
 
@@ -201,3 +202,7 @@ async def main(project: str, location: str, datasets_filter: list[str]):
                 ),
             ),
         )
+
+
+if __name__ == "__main__":
+    asyncio.run(main("blz-d-gdp-telem-data-81", "us", ["tdeng_test"]))
